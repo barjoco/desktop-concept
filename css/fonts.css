@@ -1,0 +1,100 @@
+@font-face {
+  src: url(../fonts/Inter-BlackItalic.otf);
+  font-family: Inter-BlackItalic;
+}
+
+@font-face {
+  src: url(../fonts/Inter-Black.otf);
+  font-family: Inter-Black;
+}
+
+@font-face {
+  src: url(../fonts/Inter-BoldItalic.otf);
+  font-family: Inter-BoldItalic;
+}
+
+@font-face {
+  src: url(../fonts/Inter-Bold.otf);
+  font-family: Inter-Bold;
+}
+
+@font-face {
+  src: url(../fonts/Inter-ExtraBoldItalic.otf);
+  font-family: Inter-ExtraBoldItalic;
+}
+
+@font-face {
+  src: url(../fonts/Inter-ExtraBold.otf);
+  font-family: Inter-ExtraBold;
+}
+
+@font-face {
+  src: url(../fonts/Inter-Italic.otf);
+  font-family: Inter-Italic;
+}
+
+@font-face {
+  src: url(../fonts/Inter-MediumItalic.otf);
+  font-family: Inter-MediumItalic;
+}
+
+@font-face {
+  src: url(../fonts/Inter-Medium.otf);
+  font-family: Inter-Medium;
+}
+
+@font-face {
+  src: url(../fonts/Inter-Regular.otf);
+  font-family: Inter-Regular;
+}
+
+@font-face {
+  src: url(../fonts/Inter-SemiBoldItalic.otf);
+  font-family: Inter-SemiBoldItalic;
+}
+
+@font-face {
+  src: url(../fonts/Inter-SemiBold.otf);
+  font-family: Inter-SemiBold;
+}
+
+@font-face {
+  src: url(../fonts/HKGrotesk-BoldItalic.otf);
+  font-family: HKGrotesk-BoldItalic;
+}
+@font-face {
+  src: url(../fonts/HKGrotesk-Bold.otf);
+  font-family: HKGrotesk-Bold;
+}
+@font-face {
+  src: url(../fonts/HKGrotesk-Italic.otf);
+  font-family: HKGrotesk-Italic;
+}
+@font-face {
+  src: url(../fonts/HKGrotesk-LightItalic.otf);
+  font-family: HKGrotesk-LightItalic;
+}
+@font-face {
+  src: url(../fonts/HKGrotesk-Light.otf);
+  font-family: HKGrotesk-Light;
+}
+@font-face {
+  src: url(../fonts/HKGrotesk-MediumItalic.otf);
+  font-family: HKGrotesk-MediumItalic;
+}
+@font-face {
+  src: url(../fonts/HKGrotesk-Medium.otf);
+  font-family: HKGrotesk-Medium;
+}
+@font-face {
+  src: url(../fonts/HKGrotesk-Regular.otf);
+  font-family: HKGrotesk-Regular;
+}
+@font-face {
+  src: url(../fonts/HKGrotesk-SemiBoldItalic.otf);
+  font-family: HKGrotesk-SemiBoldItalic;
+}
+@font-face {
+  src: url(../fonts/HKGrotesk-SemiBold.otf);
+  font-family: HKGrotesk-SemiBold;
+}

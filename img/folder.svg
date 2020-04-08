@@ -1,0 +1,54 @@
+<svg width="249.73" height="188.03" version="1.1" viewBox="0 0 66.073 49.748" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="b" x1="1234.2" x2="1235.2" y1="547.52" y2="821.51" gradientTransform="matrix(.26458 0 0 .26458 -257.27 -335.48)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#ff8b53" offset="0"/>
+   <stop stop-color="#c53700" offset="1"/>
+  </linearGradient>
+  <filter id="d" color-interpolation-filters="sRGB">
+   <feFlood flood-color="rgb(255,174,135)" result="flood"/>
+   <feComposite in="flood" in2="SourceGraphic" operator="out" result="composite1"/>
+   <feGaussianBlur in="composite1" result="blur"/>
+   <feOffset dx="0" dy="1" result="offset"/>
+   <feComposite in="offset" in2="SourceGraphic" operator="atop" result="composite2"/>
+  </filter>
+  <linearGradient id="a" x1="100.69" x2="100.69" y1="114.78" y2="52.128" gradientTransform="matrix(.84042 0 0 .88528 443.21 133.4)" gradientUnits="userSpaceOnUse" xlink:href="#c"/>
+  <linearGradient id="c">
+   <stop stop-color="#ff773d" offset="0"/>
+   <stop stop-color="#ffb76b" offset="1"/>
+  </linearGradient>
+  <clipPath id="h">
+   <path transform="matrix(1 0 .11531 1.0066 449.35 66.536)" d="m19.049 94.521c-2.9607 0-5.3444 2.3837-5.3444 5.3444v62.155c0 2.9607 2.3837 5.3444 5.3444 5.3444h80.282c2.9607 0 5.3444-2.3837 5.3444-5.3444v-53.479c0-2.9607-2.3837-5.3438-5.3444-5.3438h-40.141v-3.3316c0-2.9607-2.3832-5.3444-5.3439-5.3444z" fill="url(#linearGradient5728)" filter="url(#filter1264-9)" stroke-width=".13098"/>
+  </clipPath>
+  <filter id="f" color-interpolation-filters="sRGB">
+   <feFlood flood-color="rgb(255,213,169)" result="flood"/>
+   <feComposite in="flood" in2="SourceGraphic" operator="out" result="composite1"/>
+   <feGaussianBlur in="composite1" result="blur"/>
+   <feOffset dx="0" dy="1" result="offset"/>
+   <feComposite in="offset" in2="SourceGraphic" operator="atop" result="fbSourceGraphic"/>
+   <feColorMatrix in="fbSourceGraphic" result="fbSourceGraphicAlpha" values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"/>
+   <feFlood flood-color="rgb(172,23,0)" flood-opacity=".23529" in="fbSourceGraphic" result="flood"/>
+   <feComposite in="flood" in2="fbSourceGraphic" operator="in" result="composite1"/>
+   <feGaussianBlur in="composite1" result="blur" stdDeviation="1"/>
+   <feOffset dx="-1" dy="-1" result="offset"/>
+   <feComposite in="offset" in2="offset" operator="atop" result="composite2"/>
+  </filter>
+  <filter id="e" color-interpolation-filters="sRGB">
+   <feFlood flood-color="rgb(255,201,145)" result="flood"/>
+   <feComposite in="flood" in2="SourceGraphic" operator="out" result="composite1"/>
+   <feGaussianBlur in="composite1" result="blur"/>
+   <feOffset dx="0" dy="1" result="offset"/>
+   <feComposite in="offset" in2="SourceGraphic" operator="atop" result="composite2"/>
+  </filter>
+  <filter id="g" color-interpolation-filters="sRGB">
+   <feColorMatrix result="color1" type="hueRotate" values="203"/>
+   <feColorMatrix result="color2" type="saturate" values="1"/>
+  </filter>
+ </defs>
+ <g transform="translate(-104.18 -69.001)">
+  <g transform="translate(-39.709 174.62)" filter="url(#g)">
+   <path transform="matrix(.56912 0 0 .56912 137.18 6.94)" d="m26.8-190.5c-2.9607 0-5.3444 2.3837-5.3444 5.3444v62.155c0 2.9607 2.3837 5.3444 5.3444 5.3444h80.282c2.9607 0 5.3444-2.3837 5.3444-5.3444v-53.479c0-2.9607-2.3837-5.3438-5.3444-5.3438h-40.141v-3.3316c0-2.9607-2.3832-5.3444-5.3439-5.3444z" fill="url(#b)" filter="url(#d)" stroke-width=".13098"/>
+   <rect transform="matrix(.56912 0 -.065194 .56538 -109.8 -192.89)" x="482.35" y="179.55" width="90.97" height="55.461" ry="5.3442" clip-path="url(#h)" fill="url(#a)" filter="url(#f)" stroke-width=".21607"/>
+   <rect transform="matrix(.56912 0 -.065194 .56538 -109.8 -192.89)" x="482.35" y="179.55" width="90.97" height="55.461" ry="5.3442" fill="url(#a)" filter="url(#e)" stroke-width=".21607"/>
+  </g>
+ </g>
+</svg>

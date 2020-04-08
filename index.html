@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link id="theme" rel="stylesheet" href="" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Interactive Desktop Concept</title>
+  </head>
+  <body>
+    <div class="dialogue" id="dialogue">
+      <div class="dialogue__box box">
+        <div class="box__content">
+          <div class="dialogue__icon">
+            <i class="material-icons">power_settings_new</i>
+          </div>
+          <div class="dialogue__message">
+            <span>Are you sure you want to shutdown?</span>
+          </div>
+          <div class="dialogue__options">
+            <div class="-i">No</div>
+            <div class="-i">Yes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <nav>
+        <div class="nav__left">
+          <div
+            class="nav__item -i toggle_power_menu"
+            id="toggle_power_menu"
+            data-tooltip="Power menu"
+          >
+            <i class="material-icons">settings_power</i>
+          </div>
+          <div
+            class="nav__item -i"
+            data-tooltip="Task view"
+            id="toggle_task_view"
+          >
+            <i class="material-icons">sort</i>
+          </div>
+          <div
+            class="nav__item -i inactive workspace"
+            data-tooltip="Workspace 1"
+          >
+            <span>1</span>
+          </div>
+          <div
+            class="nav__item -i inactive workspace"
+            data-tooltip="Workspace 2"
+          >
+            <span>2</span>
+          </div>
+          <div
+            class="nav__item -i inactive workspace"
+            data-tooltip="Workspace 3"
+          >
+            <span>3</span>
+          </div>
+          <div
+            class="nav__item -i inactive workspace"
+            data-tooltip="Workspace 4"
+          >
+            <span>4</span>
+          </div>
+          <div class="nav__item -i active workspace" data-tooltip="Workspace 5">
+            <span>5</span>
+          </div>
+          <div
+            class="nav__item -i inactive workspace"
+            data-tooltip="Workspace 6"
+          >
+            <span>6</span>
+          </div>
+          <div class="nav__item -i" data-tooltip="New workspace">
+            <span>+</span>
+          </div>
+        </div>
+        <div class="nav__centre"></div>
+        <div class="nav__right">
+          <div class="nav__item -i" data-tooltip="WiFi" id="toggle_wifi_list">
+            <i class="material-icons">wifi</i>
+          </div>
+          <div
+            class="nav__item -i"
+            data-tooltip="Bluetooth"
+            id="toggle_bluetooth_list"
+          >
+            <i class="material-icons">bluetooth</i>
+          </div>
+          <div class="nav__item -i" data-tooltip="Volume" id="toggle_volume">
+            <i class="material-icons">volume_down</i>
+          </div>
+          <div
+            class="nav__item -i"
+            id="toggle_brightness"
+            data-tooltip="Toggle theme"
+          >
+            <i class="material-icons">brightness_2</i>
+          </div>
+          <div
+            class="nav__item -i"
+            data-tooltip="Date & time"
+            id="toggle_calendar"
+          >
+            <span>Monday 06, 23:06</span>
+          </div>
+          <div class="nav__item -i" data-tooltip="Search" id="toggle_search">
+            <i class="material-icons">search</i>
+          </div>
+          <div class="nav__item -i notifications" data-tooltip="Notifications" id="toggle_notifications">
+            <i class="material-icons">notifications</i>
+          </div>
+        </div>
+      </nav>
+
+      <div class="power_menu box" id="power_menu">
+        <section class="power_menu__top">
+          <div class="power_menu__top__left">
+            <div class="-i" id="shutdown">
+              <i class="material-icons">power_settings_new</i>
+            </div>
+            <div class="-i">
+              <i class="material-icons">refresh</i>
+            </div>
+            <div class="-i">
+              <i class="material-icons">https</i>
+            </div>
+            <div class="-i">
+              <i class="material-icons">settings</i>
+            </div>
+          </div>
+          <div class="power_menu__top__right">
+            <div>
+              <span>John Smith</span>
+            </div>
+            <div class="user_img">
+              <img src="./img/bitmap.jpg" />
+            </div>
+          </div>
+        </section>
+        <section class="power_menu__bottom">
+          <ul>
+            <li class="-i">Check for updates</li>
+            <li class="-i">Install package...</li>
+            <li class="-i">System settings...</li>
+            <li class="-i">Desktop preferences...</li>
+            <li class="-i">About</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="task_view box" id="task_view">
+        <section class="task_view__list">
+          <ul>
+            <li>
+              <div class="task_view__header">Workspace 1</div>
+              <div class="task_view__task">
+                <div class="task_view__icon">
+                  <img src="./img/firefox.svg" />
+                </div>
+                <div class="task_view__label">Firefox - New Tab</div>
+              </div>
+            </li>
+            <li>
+              <div class="task_view__header">Workspace 2</div>
+              <div class="task_view__task">
+                <div class="task_view__icon">
+                  <img src="./img/spotify.svg" />
+                </div>
+                <div class="task_view__label">Spotify</div>
+              </div>
+              <div class="task_view__task">
+                <div class="task_view__icon">
+                  <img src="./img/discord.svg" />
+                </div>
+                <div class="task_view__label">Discord</div>
+              </div>
+            </li>
+            <li>
+              <div class="task_view__header">Workspace 3</div>
+              <div class="task_view__task">
+                <div class="task_view__icon">
+                  <img src="./img/vscode.svg" />
+                </div>
+                <div class="task_view__label">Visual Studio Code</div>
+              </div>
+            </li>
+            <li>
+              <div class="task_view__header">Workspace 4</div>
+              <div class="task_view__task">
+                <div class="task_view__icon"><img src="./img/libre.svg" /></div>
+                <div class="task_view__label">LibreOffice Writer</div>
+              </div>
+            </li>
+            <li>
+              <div class="task_view__header">Workspace 5</div>
+              <div class="task_view__task">
+                <div class="task_view__icon">
+                  <img src="./img/reddit.svg" />
+                </div>
+                <div class="task_view__label">Firefox - Reddit</div>
+              </div>
+              <div class="task_view__task">
+                <div class="task_view__icon">
+                  <img src="./img/netflix.svg" />
+                </div>
+                <div class="task_view__label">Firefox - Netflix</div>
+              </div>
+            </li>
+            <li>
+              <div class="task_view__header">Workspace 6</div>
+              <div class="task_view__task">
+                <div class="task_view__icon"><img src="./img/krita.svg" /></div>
+                <div class="task_view__label">Krita</div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li class="-i">New workspace</li>
+            <li class="-i">Delete workspace</li>
+            <li class="-i">Task manager...</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="task_view_context box" id="task_view_context">
+        <section>
+          <ul>
+            <li class="-i">New window</li>
+            <li class="-i">Add to favourites</li>
+            <li class="-i">Properties...</li>
+            <li class="-i">Close window</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="wifi_list box" id="wifi_list">
+        <section class="wifi_list__ssids">
+          <ul>
+            <li class="wifi_list__item">
+              <div>
+                virginmedia12345
+              </div>
+              <div class="wifi_list__icons">
+                <i class="material-icons">wifi</i>
+              </div>
+            </li>
+
+            <li class="wifi_list__item">
+              <div>
+                NEATGEAR_321
+              </div>
+              <div class="wifi_list__icons">
+                <i class="material-icons">wifi</i>
+              </div>
+            </li>
+            <li class="wifi_list__item">
+              <div>
+                John's Hotspot
+              </div>
+              <div class="wifi_list__icons">
+                <i class="material-icons">lock</i>
+                <i class="material-icons">wifi</i>
+              </div>
+            </li>
+            <li class="wifi_list__item">
+              <div>
+                Tamagotchi32
+              </div>
+              <div class="wifi_list__icons">
+                <i class="material-icons">wifi</i>
+              </div>
+            </li>
+            <li class="wifi_list__item">
+              <div>
+                unknown
+              </div>
+              <div class="wifi_list__icons">
+                <i class="material-icons">lock</i>
+                <i class="material-icons">wifi</i>
+              </div>
+            </li>
+            <li class="wifi_list__item">
+              <div>
+                wireless6
+              </div>
+              <div class="wifi_list__icons">
+                <i class="material-icons">lock</i>
+                <i class="material-icons">wifi</i>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li class="-i">Join network...</li>
+            <li class="-i">Create network...</li>
+            <li class="-i">Network settings...</li>
+            <li class="-i">Disable WiFi</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="bluetooth_list box" id="bluetooth_list">
+        <section class="bluetooth_list__ssids">
+          <ul>
+            <li class="bluetooth_list__item">
+              <div>
+                Logitech Wireless Keyboard
+              </div>
+              <div class="bluetooth_list__icons">
+                <i class="material-icons">keyboard</i>
+                <i class="material-icons">bluetooth</i>
+              </div>
+            </li>
+
+            <li class="bluetooth_list__item">
+              <div>
+                John's mouse
+              </div>
+              <div class="bluetooth_list__icons">
+                <i class="material-icons">mouse</i>
+                <i class="material-icons">bluetooth</i>
+              </div>
+            </li>
+            <li class="bluetooth_list__item">
+              <div>
+                Wonderboom Portable Speaker
+              </div>
+              <div class="bluetooth_list__icons">
+                <i class="material-icons">speaker</i>
+                <i class="material-icons">bluetooth</i>
+              </div>
+            </li>
+            <li class="bluetooth_list__item">
+              <div>
+                MAC:A1-B2-C3-D4-E5-F6
+              </div>
+              <div class="bluetooth_list__icons">
+                <i class="material-icons">bluetooth</i>
+              </div>
+            </li>
+            <li class="bluetooth_list__item">
+              <div>
+                LG G7 ThinQ
+              </div>
+              <div class="bluetooth_list__icons">
+                <i class="material-icons">phone</i>
+                <i class="material-icons">bluetooth</i>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <li class="-i">Connect device...</li>
+            <li class="-i">Bluetooth settings...</li>
+            <li class="-i">Disable Bluetooth</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="volume box" id="volume">
+        <section>
+          <i class="material-icons">volume_up</i>
+          <input type="range" class="volume__slider" value="75" />
+          <i class="material-icons">volume_mute</i>
+        </section>
+      </div>
+
+      <div class="calendar box" id="calendar">
+        <section class="calendar__header">
+          <div>April 2020</div>
+          <div>23:06:53</div>
+        </section>
+        <section class="calendar__content">
+          <div class="calendar__date">
+            <table>
+              <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+              </tr>
+              <tr>
+                <td class="old -i">29</td>
+                <td class="old -i">30</td>
+                <td class="old -i">31</td>
+                <td class="-i">1</td>
+                <td class="-i">2</td>
+                <td class="-i">3</td>
+                <td class="-i">4</td>
+              </tr>
+              <tr>
+                <td class="-i">5</td>
+                <td class="current -i">6</td>
+                <td class="-i">7</td>
+                <td class="-i">8</td>
+                <td class="-i">9</td>
+                <td class="-i">10</td>
+                <td class="-i">11</td>
+              </tr>
+              <tr>
+                <td class="-i">12</td>
+                <td class="-i">13</td>
+                <td class="-i">14</td>
+                <td class="-i">15</td>
+                <td class="-i">16</td>
+                <td class="-i">17</td>
+                <td class="-i">18</td>
+              </tr>
+              <tr>
+                <td class="-i">19</td>
+                <td class="-i">20</td>
+                <td class="-i">21</td>
+                <td class="-i">22</td>
+                <td class="-i">23</td>
+                <td class="-i">24</td>
+                <td class="-i">25</td>
+              </tr>
+              <tr>
+                <td class="-i">26</td>
+                <td class="-i">27</td>
+                <td class="-i">28</td>
+                <td class="-i">29</td>
+                <td class="-i">30</td>
+                <td class="old -i">1</td>
+                <td class="old -i">2</td>
+              </tr>
+            </table>
+          </div>
+          <div class="calendar__time">
+            <div class="calendar__clock"></div>
+          </div>
+        </section>
+      </div>
+
+      <div class="search box" id="search">
+        <section class="search__input">
+          <i class="material-icons">search</i>
+          <input type="text" placeholder="Search..." />
+        </section>
+        <section class="search__apps">
+          <div class="search__apps_categories">
+            <ul>
+              <li><i class="material-icons -i">book</i></li>
+              <li><i class="material-icons -i">business</i></li>
+              <li class="active"><i class="material-icons -i">code</i></li>
+              <li><i class="material-icons -i">school</i></li>
+              <li><i class="material-icons -i">theaters</i></li>
+              <li><i class="material-icons -i">games</i></li>
+              <li><i class="material-icons -i">music_note</i></li>
+              <li><i class="material-icons -i">photo</i></li>
+              <li><i class="material-icons -i">more_horiz</i></li>
+            </ul>
+          </div>
+          <div class="search__apps_icons">
+            <section class="search__apps_header">Development</section>
+            <section class="search__apps_items">
+              <div class="search__apps_item">
+                <div class="search__apps_icon">
+                  <img src="./img/vscode.svg" />
+                </div>
+                <div class="search__apps_label">Code</div>
+              </div>
+              <div class="search__apps_item">
+                <div class="search__apps_icon">
+                  <img src="./img/docker.png" />
+                </div>
+                <div class="search__apps_label">Docker</div>
+              </div>
+              <div class="search__apps_item">
+                <div class="search__apps_icon">
+                  <img src="./img/intellij.svg" />
+                </div>
+                <div class="search__apps_label">IntelliJ IDEA</div>
+              </div>
+              <div class="search__apps_item">
+                <div class="search__apps_icon">
+                  <img src="./img/postman.svg" />
+                </div>
+                <div class="search__apps_label">Postman</div>
+              </div>
+              <div class="search__apps_item">
+                <div class="search__apps_icon">
+                  <img src="./img/qt.svg" />
+                </div>
+                <div class="search__apps_label">QT Creator</div>
+              </div>
+              <div class="search__apps_item">
+                <div class="search__apps_icon">
+                  <img src="./img/slack.svg" />
+                </div>
+                <div class="search__apps_label">Slack</div>
+              </div>
+              <div class="search__apps_item">
+                <div class="search__apps_icon">
+                  <img src="./img/virtualbox.svg" />
+                </div>
+                <div class="search__apps_label">VirtualBox</div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+
+      <div class="notifications_list box" id="notifications">
+        <section class="notifications_list__items" id="notifications_list">
+          <div class="notifications__header">Unread notifications</div>
+          <div class="task_view__task">
+            <div class="task_view__icon">
+              <img src="./img/discord.svg" />
+            </div>
+            <div class="task_view__label">
+              <div class="notifications_list__label_prefix">Jane Doe</div>
+              <div>How's it going?</div>
+            </div>
+            <div class="notification__close">
+              <i class="material-icons -i">close</i>
+            </div>
+          </div>
+          <div class="task_view__task">
+            <div class="task_view__icon">
+              <img src="./img/reddit.svg" />
+            </div>
+            <div class="task_view__label">
+              <div class="notifications_list__label_prefix">Reddit</div>
+              <div>Someone commented on your post</div>
+            </div>
+            <div class="notification__close">
+              <i class="material-icons -i">close</i>
+            </div>
+          </div>
+          <div class="task_view__task">
+            <div class="task_view__icon">
+              <img src="./img/slack.svg" />
+            </div>
+            <div class="task_view__label">
+              <div class="notifications_list__label_prefix">Slack</div>
+              <div>New message in #linux</div>
+            </div>
+            <div class="notification__close">
+              <i class="material-icons -i">close</i>
+            </div>
+          </div>
+          <div class="notifications__header">Previous notifications</div>
+          <div class="task_view__task notifications__read">
+            <div class="task_view__icon">
+              <img src="./img/discord.svg" />
+            </div>
+            <div class="task_view__label">
+              <div class="notifications_list__label_prefix">Jane Doe</div>
+              <div>Hey</div>
+            </div>
+            <div class="notification__close">
+              <i class="material-icons -i">close</i>
+            </div>
+          </div>
+          <div class="no_notifications" id="no_notifications">
+            <i class="material-icons">notifications_none</i>
+            <div>No notifications</div>
+          </div>
+        </section>
+        <section>
+          <ul>
+            <li class="-i">Notifications settings...</li>
+            <li class="-i">Clear notifications</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="file_grid" id="file_grid">
+        <div class="file_grid__item">
+          <div class="file_grid__icon rubbish">
+            <img src="./img/bin-icon.svg" draggable="false" />
+          </div>
+          <div class="file_grid__label">Rubbish</div>
+        </div>
+        <div class="file_grid__item">
+          <div class="file_grid__icon">
+            <img src="./img/folder.svg" draggable="false" />
+          </div>
+          <div class="file_grid__label">John</div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

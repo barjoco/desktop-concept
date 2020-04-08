@@ -1,0 +1,18 @@
+:root {
+    --wallpaper: url(../img/wallpaper_light.jpg);
+    --nav_colour: 240, 246, 255;
+    --nav_item_colour: 31, 39, 51;
+    --nav_border_colour: rgba(var(--nav_colour), 0.25);
+}
+
+.file_grid {
+    color: white;
+}
+
+.file_grid__item.clone {
+    color: white;
+}
+
+.task_view__header {
+    color: rgba(var(--nav_item_colour), 0.5);
+}
